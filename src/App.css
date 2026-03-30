@@ -1,0 +1,160 @@
+
+ .container {
+  background:rgb(75, 73, 73); 
+  margin-top: 40px;
+  padding: 30px 40px;
+  border-radius: 16px;
+  font-size: xx-large;
+  /* margin-right: 60px; */
+  box-shadow: 0 4px 12px rgba(201, 173, 173, 0.2);
+  width: 100%;                 
+  max-width: 800px;           
+  min-height: 600px;  
+  text-align: center;     
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  background-color: #ccc;
+  justify-content: center;   
+  align-items: flex-start;   
+  font-family: Arial, sans-serif;
+}
+
+
+
+ .header {
+  display: flex;
+  flex-direction: row;      
+  justify-content: center;  
+  align-items: center;      
+  gap: 12px;              
+  margin-bottom: 20px;
+}
+.header input[type="text"] {
+  flex:1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: xx-large;
+  width: 50%;
+  
+}
+/* .header button {
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: xx-large;
+  cursor: pointer;
+  
+} */
+.header button {
+  background: brown;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;       
+  border-radius: 8px;
+  font-size: x-large;
+  cursor: pointer;
+  
+}
+
+.notification {
+  margin-bottom: 20px;
+}
+
+.msg {
+  color: green;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* ---- task list ---- */
+.details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.details li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: x-large;
+  gap: 8px;
+}
+
+.details li input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-size: x-large;
+  border-radius: 6px;
+}
+
+.details li button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: x-large;
+  cursor: pointer;
+  background:lightseagreen;
+  color: #fff;
+  
+}
+
+.details li button:hover {
+  background:yellowgreen;
+}
+
+
+
+/* input{
+  height:50px;
+  width:300px;
+  margin-right:50px;
+  margin-left:150px;
+  font-size:30px;
+} */
+/* button{
+  height:50px;
+  width:100px;
+  border:none;
+  font-size:20px;
+  background-color:rosybrown;
+  border-radius:10px;
+}
+li{
+  list-style-type:none;
+  font-size:25px;
+  text-align:center;
+  
+
+}
+
+.msg{
+  background-color:rgb(122, 167, 55);
+    color:black;
+  border-radius:5px;
+  text-align:center;
+  height:25px;
+  max-width:420px;
+  margin-left:350px;
+  padding:18px;
+}
+.error{
+  background-color:red;
+  border-radius:5px;
+  height:25px;
+  text-align:center;
+
+}
+ */
