@@ -4,13 +4,13 @@
 
 import axios from "axios";
 import { useContext, useState } from "react";
-import { AuthContext } from "./AuthContext";
+import { Authcontext } from "./Authcontext";
 import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 
 function Login() {
 
-  const { login } = useContext(AuthContext);
+  const { login } = useContext(Authcontext);
   const navigate = useNavigate();
 
   const [form, setForm] = useState({
