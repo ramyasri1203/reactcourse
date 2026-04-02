@@ -12,7 +12,7 @@ import Pagenotfound from "./Pagenotfound";
 import Login from './Login';
 import Signup from './Signup';
 import PrivateRoute from "./PrivateRoute";
-import {Authcontext} from "./Authcontext";
+import {AuthContext} from "./AuthContext";
 import {useState} from "react";
 import {useNavigate} from "react-router-dom";
 
@@ -33,7 +33,7 @@ function App() {
     return (
     <>
 
-    <Authcontext.Provider value={{isLoggedIn,login,logout}}>
+    <AuthContext.Provider value={{isLoggedIn,login,logout}}>
 
     {/* <div className="container"> */}
       {/* <Todoo /> */} 
@@ -68,7 +68,7 @@ function App() {
         </PrivateRoute>}/>
       <Route path="*" element={<Pagenotfound/>}/>
     </Routes>
-    </Authcontext.Provider>
+    </AuthContext.Provider>
     </>
 
     

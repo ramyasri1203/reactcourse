@@ -1,8 +1,8 @@
 import {useContext} from "react";
-import {Authcontext} from "./Authcontext";
+import {AuthContext} from "./AuthContext";
 import {Navigate} from "react-router-dom";
 function PrivateRoute({children}){
-    const {isLoggedIn}=useContext(Authcontext);
+    const {isLoggedIn}=useContext(AuthContext);
     return(
         isLoggedIn ? children:<Navigate to="/login" replace/>
 

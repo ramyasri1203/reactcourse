@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {Authcontext} from "./Authcontext";
+import {AuthContext} from "./AuthContext";
 import {useNavigate} from "react-router-dom";
 
 export const AuthProvider=({ children }) => {
@@ -14,8 +14,8 @@ export const AuthProvider=({ children }) => {
         navigate("/login",{replace:true});
     };
     return(
-        <Authcontext.Provider value={{isLoggedIn,login,logout}}>
+        <AuthContext.Provider value={{isLoggedIn,login,logout}}>
         {children}
-        </Authcontext.Provider>
+        </AuthContext.Provider>
     )
 }

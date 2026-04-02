@@ -2,11 +2,11 @@ import {Link} from "react-router-dom";
 import "./Navbar.css";
 //import {useAuth} from "./useAuth";
 import {useContext} from "react";
-import {Authcontext} from "./Authcontext";
+import {AuthContext} from "./AuthContext";
 
 function Navbarr(){
     // const {logout} = useAuth();
-    const{logout}=useContext(Authcontext);
+    const{logout}=useContext(AuthContext);
     return(
         <>
         <ul className="navbar">
